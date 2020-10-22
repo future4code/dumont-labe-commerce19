@@ -1,26 +1,65 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./components/styles.css";
+import { CardVideo } from "./components/CardVideo";
+//import { Topico } from "./components/Topico";
+import { Header } from "./components/Header";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="tela-inteira">
+        <Header tituloDoHeader={"Quantidade de Produtos: 8"} />
+
+        <main>
+          {/*<nav class="menu-vertical">
+            <ul>
+              <Topico tituloDoTopico={"Início"} />
+              <Topico tituloDoTopico={"Em alta"} />
+              <Topico tituloDoTopico={"Inscrições"} />
+              <Topico tituloDoTopico={"Originais"} />
+              <hr />
+              <Topico tituloDoTopico={"Biblioteca"} />
+              <Topico tituloDoTopico={"Histórico"} />
+            </ul>
+          </nav>*/ }
+
+          <section class="painel-de-videos">
+            <CardVideo
+              url={"https://picsum.photos/400/400?a=1"}
+              tituloDoVideo={"Item E"}
+            />
+            <CardVideo
+              url={"https://picsum.photos/400/400?a=2"}
+              tituloDoVideo={"Item D"}
+            />
+            <CardVideo
+              url={"https://picsum.photos/400/400?a=3"}
+              tituloDoVideo={"Item B"}
+            />
+            <CardVideo
+              url={"https://picsum.photos/400/400?a=4"}
+              tituloDoVideo={"Item C"}
+            />
+            <CardVideo
+              url={"https://picsum.photos/400/400?a=5"}
+              tituloDoVideo={"Título 4"}
+            />
+            <CardVideo
+              url={"https://picsum.photos/400/400?a=6"}
+              tituloDoVideo={"Título 5"}
+            />
+            <CardVideo
+              url={"https://picsum.photos/400/400?a=7"}
+              tituloDoVideo={"Título 6"}
+            />
+            <CardVideo
+              url={"https://picsum.photos/400/400?a=8"}
+              tituloDoVideo={"Título 7"}
+            />
+          </section>
+        </main>
+
+      </div>
     </div>
   );
 }
-
-export default App;
