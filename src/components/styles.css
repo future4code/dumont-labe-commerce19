@@ -1,6 +1,5 @@
 .App {
-    font-family: sans-serif;
-    /* text-align: center; */
+    font-family: Montserrat;
   }
   
   body {
@@ -56,6 +55,8 @@
     border-width: thin;
     align-items: start;
     justify-items: stretch;
+    padding: 5px;
+    border: 1px dashed orange;
   }
   
   .box-pagina-principal > img {
@@ -63,6 +64,23 @@
     height: 200px;
   }
   
+  .botao-adicionar-carrinho {
+    margin: 0px auto;
+    background: black;
+    color: white;
+    border: unset;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .botao-adicionar-carrinho:hover {
+    background-color: coral;
+  }
+
+  .preco-video {
+    text-align: center;
+  }
+
   h4 {
     margin-left: 20px;
   }
